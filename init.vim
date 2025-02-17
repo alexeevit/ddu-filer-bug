@@ -6,8 +6,6 @@ Plug 'Shougo/ddu-ui-filer'
 Plug 'Shougo/ddu-column-filename'
 Plug 'Shougo/ddu-source-file'
 Plug 'Shougo/ddu-kind-file'
-Plug 'Shougo/ddu-filter-matcher_hidden'
-Plug 'Shougo/ddu-filter-matcher_substring'
 
 call plug#end()
 
