@@ -27,6 +27,10 @@ command! DduFilesBrowserSearch
 nnoremap tt <Cmd>DduFilesBrowser<CR>
 nnoremap tf <Cmd>DduFilesBrowserSearch<CR>
 
+call ddu#custom#action('kind', 'file', 'tabopen', { args -> execute('tabnew ' . args.items[0].action.path) })
+call ddu#custom#action('kind', 'file', 'vsplit', { args -> execute('vsplit ' . args.items[0].action.path) })
+call ddu#custom#action('kind', 'file', 'split', { args -> execute('split ' . args.items[0].action.path) })
+
 call ddu#custom#patch_local('files-browser', #{
       \   ui: 'filer',
       \   uiParams: #{
@@ -110,8 +114,10 @@ function! s:ddu_my_settings() abort
   nnoremap <buffer><silent> q
         \ <Cmd>call ddu#ui#do_action('quit')<CR>
   nnoremap <buffer><silent> <C-t>
-        \ <Cmd>call ddu#ui#do_action('itemAction',
-        \ #{name: 'tabopen'})<CR>
+        \ <Cmd>call ddu#ui#do_action('itemAction', #{
+        \   name: 'tabopen',
+        \   params: #{ command: 'tabedit' },
+        \ })<CR>
   nnoremap <buffer><silent> <C-v>
         \ <Cmd>call ddu#ui#do_action('itemAction',
         \ #{name: 'vsplit'})<CR>
