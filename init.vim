@@ -45,8 +45,6 @@ function! s:ddu_my_settings() abort
         \ <Cmd>call ddu#ui#do_action('itemAction', #{ name: 'newDirectory' })<CR>
   nnoremap <buffer><silent> %
         \ <Cmd>call ddu#ui#do_action('itemAction', #{ name: 'newFile' })<CR>
-  nnoremap <buffer> r
-        \ <Cmd>call ddu#ui#do_action('itemAction', #{ name: 'rename' })<CR>
   nnoremap <buffer><silent> <C-r>
         \ <Cmd>call ddu#ui#do_action('redraw')<CR>
 endfunction
