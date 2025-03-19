@@ -1,0 +1,18 @@
+[submodule "plugins/ddu-column-filename"]
+	path = plugins/ddu-column-filename
+	url = git@github.com:Shougo/ddu-column-filename.git
+[submodule "plugins/ddu-kind-file"]
+	path = plugins/ddu-kind-file
+	url = git@github.com:Shougo/ddu-kind-file.git
+[submodule "plugins/ddu-source-file"]
+	path = plugins/ddu-source-file
+	url = git@github.com:Shougo/ddu-source-file.git
+[submodule "plugins/ddu-ui-filer"]
+	path = plugins/ddu-ui-filer
+	url = git@github.com:Shougo/ddu-ui-filer.git
+[submodule "plugins/ddu.vim"]
+	path = plugins/ddu.vim
+	url = git@github.com:Shougo/ddu.vim
+[submodule "plugins/denops.vim"]
+	path = plugins/denops.vim
+	url = git@github.com:vim-denops/denops.vim
